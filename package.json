@@ -1,0 +1,29 @@
+{
+  "name": "CrowdHire",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./build/bin/www",
+    "build": "rm -rf build; babel  src -d build; cp -r src/views build/views"
+  },
+  "dependencies": {
+    "babel-plugin-syntax-async-functions": "^6.8.0",
+    "babel-plugin-transform-regenerator": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "body-parser": "~1.15.1",
+    "config": "^1.21.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "jade": "~1.11.0",
+    "morgan": "~1.7.0",
+    "pg-promise": "^5.1.2",
+    "pg-query-stream": "^1.0.0",
+    "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}
